@@ -1,0 +1,342 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2980b9"
+    tools:context="com.example.cognac.poke.PokemonInfo">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:background="#ffffff"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fillViewport="true">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Charizard"
+                        android:textAllCaps="true"
+                        android:gravity="center"
+                        android:id="@+id/name"
+                        android:height="40dp"
+                        android:background="#80CA8C"/>
+
+                    <ImageView
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:id="@+id/image"
+                        android:layout_below="@+id/name"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <RelativeLayout
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/rel"
+                        android:layout_toRightOf="@+id/image"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/name"
+                        android:layout_alignBottom="@+id/image">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="HP"
+                            android:textStyle="bold"
+                            android:layout_marginTop="10dp"
+                            android:textSize="10dp"
+                            android:id="@+id/HPtext"/>
+
+                        <TextView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/HPtext"
+                            android:layout_alignParentEnd="true"
+                            android:gravity="right"
+                            android:id="@+id/hp"
+                            android:layout_marginTop="10dp"
+                            android:text=""
+                            android:textSize="10dp"
+                            android:layout_alignParentRight="true" />
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/HPtext"
+                            android:text="DEFENSE"
+                            android:textSize="10dp"
+                            android:id="@+id/DEFENSEtext"
+                            />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/DEFENSEtext"
+                            android:layout_alignParentRight="true"
+                            android:layout_alignParentEnd="true"
+                            android:text=""
+                            android:id="@+id/defense"
+                            android:layout_below="@+id/hp"
+                            android:textSize="10dp"
+                            android:gravity="right"/>
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/DEFENSEtext"
+                            android:text="ATTACK"
+                            android:textSize="10dp"
+                            android:id="@+id/ATTACKtext"
+                            />
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@id/ATTACKtext"
+                            android:text=""
+                            android:id="@+id/attack"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/defense"
+                            android:gravity="right"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/ATTACKtext"
+                            android:text="SPEED"
+                            android:textSize="10dp"
+                            android:id="@+id/SPEEDtext"/>
+                        <TextView
+
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/speed"
+                            android:text=""
+                            android:layout_toRightOf="@id/SPEEDtext"
+                            android:gravity="right"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/attack"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SPECIAL ATTACK"
+                            android:textSize="10dp"
+                            android:id="@+id/SPECCIALATTACKtext"
+                            android:layout_below="@id/SPEEDtext"/>
+                        <TextView
+
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/specialAttack"
+                            android:layout_toRightOf="@id/SPECCIALATTACKtext"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/speed"
+                            android:text=""
+                            android:gravity="right"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:textStyle="bold"
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/SPECIALDEFENSEtext"
+                            android:text="SPECIAL DEFENSE"
+                            android:layout_below="@id/SPECCIALATTACKtext"
+                            android:textSize="10dp"/>
+
+                        <TextView
+                            android:layout_marginTop="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/specialDefense"
+                            android:layout_toRightOf="@id/SPECIALDEFENSEtext"
+                            android:layout_alignParentRight="true"
+                            android:layout_below="@id/specialAttack"
+                            android:text=""
+                            android:textSize="10dp"
+                            android:gravity="right"/>
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="15dp"
+                        android:id="@+id/desc"
+                        android:text=""
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:foregroundGravity="center"
+                        android:layout_marginTop="35dp"
+                        android:layout_below="@+id/image"/>
+
+                    <Button
+                        android:text="Skins"
+                        android:id="@+id/skin"
+                        android:background="#80CA8C"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/heightText"
+                        android:layout_toRightOf="@+id/desc"
+                        android:layout_toEndOf="@+id/desc" />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/profile"
+                        android:text=""
+                        android:height="40dp"
+                        android:background="#ffffff"
+                        android:gravity="center"
+                        android:layout_alignBottom="@+id/desc"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/profile"
+                        android:layout_marginTop="20dp"
+                        android:text="Height: "
+                        android:id="@+id/heightText"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/profile"
+                        android:layout_toRightOf="@+id/heightText"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="10dp"
+                        android:text="  "
+                        android:id="@+id/height"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/height"
+                        android:layout_marginLeft="70dp"
+                        android:text="Weight:"
+                        android:id="@+id/weightText"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_alignTop="@+id/weight" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/weight"
+                        android:text=""
+                        android:layout_below="@id/profile"
+                        android:layout_marginTop="20dp"
+                        android:layout_toRightOf="@id/weightText"
+                        android:layout_marginLeft="45dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/genderText"
+                        android:text="Habitat:"
+                        android:layout_below="@id/heightText"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/habitat"
+                        android:layout_toRightOf="@id/genderText"
+                        android:textSize="15dp"
+                        android:layout_below="@id/height"
+                        android:text=""
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/habitat"
+                        android:layout_below="@id/weightText"
+                        android:id="@+id/catchText"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:text="Catch Rate:"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignStart="@id/weightText"
+                        android:layout_alignLeft="@id/weightText" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/catchRate"
+                        android:text=""
+                        android:layout_below="@id/weight"
+                        android:layout_toRightOf="@id/catchText"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/abilitytext"
+                        android:textSize="15dp"
+                        android:textStyle="bold"
+                        android:layout_below="@id/genderText"
+                        android:text="Abilities:"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/abilitytext"
+                        android:textSize="15dp"
+                        android:id="@+id/ability"
+                        android:layout_below="@id/habitat"
+                        android:text=""
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="10dp"/>
+
+                </RelativeLayout>
+
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+</FrameLayout>
